@@ -15,8 +15,10 @@
                 <td>{{$item->name}}</td>
                 <td>{{$item->mail}}</td>
                 <td>{{$item->age}}</td>
+                <form action="/hello">
                 <td><button type="submit" formaction="/hello/add">編集</button></td>
                 <td><button >削除</button></td>
+                </form>
             </tr>
         @endforeach
     </table>
