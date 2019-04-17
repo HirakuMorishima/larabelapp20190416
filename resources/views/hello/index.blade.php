@@ -10,6 +10,7 @@
 @section('content')
     <table>
         <tr><th>Name</th><th>Mail</th><th>Age</th><tr></tr>
+        @if(isset($items))
         @foreach ($items as $item)
             <tr>
                 <td>{{$item->name}}</td>
@@ -21,6 +22,7 @@
                 </form>
             </tr>
         @endforeach
+        @endif
     </table>
 @endsection
 
